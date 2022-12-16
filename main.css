@@ -1,0 +1,50 @@
+.section {
+  background-color: rgb(27, 27, 80);
+  padding: 50px 0px;
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 333px 333px 333px;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px 32px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1;
+  color: rgb(0, 0, 56);
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2;
+  color: rgb(147, 146, 146);
+}
+
+@media (max-width: 1135px) {
+  .container {
+    margin: 0px 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 710px) {
+  .container {
+    margin: 0px 30px;
+    grid-template-columns: 1fr;
+  }
+}
